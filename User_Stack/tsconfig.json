@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./built/",
+    "sourceMap": true
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx",
+    "!node_modules/**"
+  ],
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "lib/libFileToExclude.d.ts",
+    "typings/browser",
+    "typings/main"
+  ],
+  "buildOnSave": true,
+  "files": [
+    "app.ts",
+    "app/controllers/userController.ts",
+    "app/models/userModel.ts",
+    "app/routes/indexRoutes.ts",
+    "app/routes/userRoutes.ts",
+    "typings/browser.d.ts",
+    "typings/main.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true,
+    "formatOnSave": true
+  }
+}
